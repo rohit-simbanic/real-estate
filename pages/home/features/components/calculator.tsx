@@ -6,7 +6,7 @@ interface CardProps {
   imageUrl: string;
 }
 
-export const CalculatorCard: React.FC<CardProps> = ({ title, imageUrl }) => {
+const CalculatorCard: React.FC<CardProps> = ({ title, imageUrl }) => {
   return (
     <div className="flex-shrink-0 m-6 relative overflow-hidden bg-teal-500 rounded-lg max-w-xs shadow-lg group">
       <svg
@@ -58,3 +58,4 @@ export const CalculatorCard: React.FC<CardProps> = ({ title, imageUrl }) => {
     </div>
   );
 };
+export default CalculatorCard;
