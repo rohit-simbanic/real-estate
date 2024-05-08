@@ -1,6 +1,6 @@
 import React from "react";
-import { CalculatorCard } from "../calculator";
 import SectionTitle from "@/theme/components/section-title/section-title";
+import CalculatorCard from "../calculator";
 
 const CalculatorGrid: React.FC = () => {
   const products = [
