@@ -7,7 +7,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 const PreConstructedProject: React.FC<{ property: Property[] }> = ({
-  property,
+  property = [],
 }) => {
   const cardsData = [1, 2, 3, 4];
   const itemsPerPage = 4;
