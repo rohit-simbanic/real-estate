@@ -46,7 +46,7 @@ const Footer = () => {
             hoverTextColor="white"
           />
         </div>
-        <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-3 justify-items-center lg:justify-items-start">
+        <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-4 justify-items-center lg:justify-items-start">
           <FooterMenu sections={footerSections} />
         </div>
         <div className="mt-16">
@@ -169,7 +169,10 @@ const Footer = () => {
 
           <div className="mt-16">
             <p className="mt-4 text-center text-sm text-gray-500 sm:mt-0">
-              Copyright © 2024. Best For Agents™. All Rights Reserved..
+              Copyright © 2024. Best For Agents™. All Rights Reserved.
+              <br />
+              <br />
+              Real Estate Website Solutions by Best For Agents Inc.
             </p>
           </div>
         </div>

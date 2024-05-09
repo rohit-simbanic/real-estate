@@ -145,6 +145,14 @@ const FooterMenu: React.FC<FooterMenuProps> = ({ sections }) => {
           </ul>
         </div>
       ))}
+
+      <Image
+        src="https://filecenter.bestforagents.com/Customers/358381/fileManager/SaveMaxLogo.png?src=Custom"
+        alt=""
+        className="object-cover rounded-[50%]"
+        height={300}
+        width={300}
+      />
     </>
   );
 };

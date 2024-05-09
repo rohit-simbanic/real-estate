@@ -5,6 +5,7 @@ import React from "react";
 
 interface PropertyCardProps {
   details: PropertyDetails;
+  index: number;
 }
 const ParkingIcon = () => (
   <path
@@ -32,7 +33,7 @@ const BedroomIcon = () => (
     d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
   />
 );
-const PropertyCard: React.FC<PropertyCardProps> = ({ details }) => {
+const PropertyCard: React.FC<PropertyCardProps> = ({ details, index }) => {
   return (
     <Link
       href="#"
@@ -52,9 +53,15 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ details }) => {
           <div>
             <dt className="sr-only">Price</dt>
             <dd className="text-sm text-gray-500">{details.price}</dd>
-            <div className="rounded-full bg-yellow-500 py-1 px-2 text-xs font-medium text-white w-16 my-3">
-              For Sale
-            </div>
+            {index % 2 === 0 ? (
+              <div className="rounded-full bg-yellow-500 py-1 px-2 text-xs font-medium text-white w-16 my-3">
+                For Sale
+              </div>
+            ) : (
+              <div className="rounded-full bg-yellow-500 py-1 px-2 text-xs font-medium text-white w-20 my-3">
+                For Lease
+              </div>
+            )}
           </div>
           <div>
             <dt className="sr-only">Address</dt>
