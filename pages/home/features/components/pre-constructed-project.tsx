@@ -1,7 +1,7 @@
 "use client";
 
 import ButtonRegister from "@/components/button/button-register";
-import { Pagination } from "@/theme/components/pagination/pagination";
+import Pagination from "@/theme/components/pagination/pagination";
 import SectionTitle from "@/theme/components/section-title/section-title";
 import { Property } from "@/types/constructed-property-card-types";
 import Image from "next/image";

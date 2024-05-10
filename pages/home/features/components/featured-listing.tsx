@@ -1,11 +1,10 @@
 "use client";
 import PropertyCard from "@/components/cards/property-card";
 import SectionTitle from "@/theme/components/section-title/section-title";
-import Image from "next/image";
 import React, { useState } from "react";
 import propertiesData from "../../../../data/featured-property.json";
 import { PropertyDetails } from "@/types/property-card-types";
-import { Pagination } from "@/theme/components/pagination/pagination";
+import Pagination from "@/theme/components/pagination/pagination";
 
 const FeaturedListing = () => {
   const cardsData = [1, 2, 3, 4];
