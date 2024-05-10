@@ -1,6 +1,14 @@
-import { ContactButtonProps } from "@/types/contact-button-types";
 import Link from "next/link";
 import React from "react";
+
+interface ContactButtonProps {
+  text: string;
+  href: string;
+  textColor: string;
+  bgColor: string;
+  hoverBgColor: string;
+  hoverTextColor: string;
+}
 
 const ContactButton: React.FC<ContactButtonProps> = ({
   text,

@@ -35,7 +35,7 @@ const ContactForm = () => {
       className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5"
     >
       <input
-        className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+        className="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
         type="text"
         placeholder="First Name*"
         name="firstName"
@@ -43,7 +43,7 @@ const ContactForm = () => {
         onChange={handleChange}
       />
       <input
-        className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+        className="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
         type="text"
         placeholder="Last Name*"
         name="lastName"
@@ -51,7 +51,7 @@ const ContactForm = () => {
         onChange={handleChange}
       />
       <input
-        className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+        className="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
         type="email"
         placeholder="Email*"
         name="email"
@@ -59,7 +59,7 @@ const ContactForm = () => {
         onChange={handleChange}
       />
       <input
-        className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+        className="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
         type="number"
         placeholder="Phone*"
         name="phone"
@@ -68,7 +68,7 @@ const ContactForm = () => {
       />
       <textarea
         placeholder="Message*"
-        className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+        className="w-full h-32 bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
         name="message"
         value={formData.message}
         onChange={handleChange}

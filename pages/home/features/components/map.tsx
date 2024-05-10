@@ -1,4 +1,5 @@
 "use client";
+import { fieldLabel } from "@/assets/field-label";
 import React, { useState, FormEvent } from "react";
 
 const MapComponent: React.FC = () => {
@@ -33,10 +34,10 @@ const MapComponent: React.FC = () => {
       <div className="container px-5 py-24 mx-auto flex">
         <div className="lg:w-1/3 md:w-1/2 bg-white dark:bg-gray-900 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
           <h2 className="text-gray-900 text-lg mb-1 font-medium title-font dark:text-teal-600">
-            Your queries
+            {fieldLabel["map-header"]}
           </h2>
           <p className="leading-relaxed mb-5 text-gray-600">
-            If you need any query please mail us!
+            {fieldLabel["map-subheader"]}
           </p>
           <form onSubmit={handleSubmit}>
             <div className="relative mb-4">
@@ -44,7 +45,7 @@ const MapComponent: React.FC = () => {
                 htmlFor="email"
                 className="leading-7 text-sm text-gray-600"
               >
-                Email
+                {fieldLabel["map-form-field-email"]}
               </label>
               <input
                 type="email"
@@ -60,7 +61,7 @@ const MapComponent: React.FC = () => {
                 htmlFor="message"
                 className="leading-7 text-sm text-gray-600"
               >
-                Message
+                {fieldLabel["map-form-field-message"]}
               </label>
               <textarea
                 id="message"
@@ -74,11 +75,11 @@ const MapComponent: React.FC = () => {
               type="submit"
               className="text-white bg-indigo-600 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
             >
-              Submit
+              {fieldLabel["map-form-field-submit"]}
             </button>
           </form>
           <p className="text-xs text-gray-500 mt-3">
-            we love all, we do not spam!
+            {fieldLabel["map-spam-alert"]}
           </p>
         </div>
       </div>

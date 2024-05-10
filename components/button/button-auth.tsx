@@ -1,7 +1,18 @@
-import { ButtonProps } from "@/types/button-types";
 import Link from "next/link";
 import React from "react";
 
+interface ButtonProps {
+  text: string;
+  textColor: string;
+  href: string;
+  borderColor: string;
+  borderWidth: number;
+  borderRadius: string;
+  bgColor: string;
+  hoverBgColor: string;
+  shadow: boolean;
+  className?: string;
+}
 const ButtonAuth: React.FC<ButtonProps> = ({
   text,
   textColor,

@@ -2,6 +2,7 @@ import { FooterSection } from "@/types/footer-menu-types";
 import ContactButton from "../button/button-contact";
 import FooterMenu from "../menu/footer-menu";
 import Image from "next/image";
+import { fieldLabel } from "@/assets/field-label";
 const footerSections: FooterSection[] = [
   {
     title: "Ashok ( Ash ) Patel",
@@ -169,10 +170,10 @@ const Footer = () => {
 
           <div className="mt-16">
             <p className="mt-4 text-center text-sm text-gray-500 sm:mt-0">
-              Copyright © 2024. Best For Agents™. All Rights Reserved.
+              {fieldLabel["copyright-text"]}
               <br />
               <br />
-              Real Estate Website Solutions by Best For Agents Inc.
+              {fieldLabel["copyright-text-additional"]}
             </p>
           </div>
         </div>

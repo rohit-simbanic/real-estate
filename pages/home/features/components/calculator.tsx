@@ -8,7 +8,7 @@ interface CardProps {
 
 const CalculatorCard: React.FC<CardProps> = ({ title, imageUrl }) => {
   return (
-    <div className="flex-shrink-0 m-6 relative overflow-hidden bg-teal-500 rounded-lg max-w-xs shadow-lg group">
+    <div className="flex-shrink-0 m-6 relative overflow-hidden bg-teal-500 rounded-lg w-[300px] shadow-lg group">
       <svg
         className="absolute bottom-0 left-0 mb-8 scale-150 group-hover:scale-[1.65] transition-transform"
         viewBox="0 0 375 283"
@@ -51,7 +51,7 @@ const CalculatorCard: React.FC<CardProps> = ({ title, imageUrl }) => {
         />
       </div>
       <div className="relative text-white px-6 pb-6 mt-6">
-        <div className="flex justify-between">
+        <div className="flex justify-center items-center">
           <span className="block font-semibold text-xl">{title}</span>
         </div>
       </div>

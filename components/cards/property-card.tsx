@@ -1,7 +1,14 @@
-import { PropertyDetails } from "@/types/property-card-types";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+
+interface PropertyDetails {
+  imageUrl: string;
+  price: string;
+  address: string;
+  bathrooms: number;
+  bedrooms: number;
+}
 
 interface PropertyCardProps {
   details: PropertyDetails;
@@ -65,7 +72,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ details, index }) => {
           </div>
           <div>
             <dt className="sr-only">Address</dt>
-            <dd className="font-medium dark:text-teal-600">
+            <dd className="font-medium dark:text-teal-600 h-[53px]">
               {details.address}
             </dd>
           </div>

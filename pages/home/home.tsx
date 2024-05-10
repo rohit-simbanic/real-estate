@@ -6,15 +6,19 @@ import { Property } from "@/types/constructed-property-card-types";
 import MapComponent from "./features/components/map";
 import CalculatorGrid from "./features/components/services/calculator-grid";
 import propertiesData from "../../data/pre-construction-property.json";
+import calculatorData from "../../data/calculator-items.json";
+import { CalculatorDataProps } from "@/types/calculator-data-types";
 
 const HomePage: React.FC = () => {
   const dataProperty: Property[] = propertiesData as Property[];
+  const calculatorItems: CalculatorDataProps[] =
+    calculatorData as CalculatorDataProps[];
   return (
     <div>
       <Banner />
       <FeaturedListing />
       <PreConstructedProject property={dataProperty} />
-      <CalculatorGrid />
+      <CalculatorGrid items={calculatorItems} />
       <MapComponent />
     </div>
   );

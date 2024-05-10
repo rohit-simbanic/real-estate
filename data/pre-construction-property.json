@@ -48,5 +48,20 @@
     "imageUrl": "https://filecenter.bestforagents.com/fileManager/System-Folder/PreSalesImages/Nouvelle%20Towns/ProjectsList/NouvelleTowns_condo_fp_01.jpg",
     "title": "Nouvelle Towns",
     "address": "20 Beatrice St W, Oshawa, ON L1G 3M5"
+  },
+  {
+    "imageUrl": "https://filecenter.bestforagents.com/fileManager/System-Folder/PreSalesImages/Central%20Park/ProjectsList/CentralPark_condo_fp_01.jpg",
+    "title": "Central Park",
+    "address": "1200 Sheppard Ave E, North York, ON M2K 2S5"
+  },
+  {
+    "imageUrl": "https://filecenter.bestforagents.com/fileManager/System-Folder/PreSalesImages/MILA/ProjectsList/MILA_condo_fp_01.jpg",
+    "title": "MILA",
+    "address": "2740 Lawrence Avenue East, Scarborough, ON, Canada"
+  },
+  {
+    "imageUrl": "https://filecenter.bestforagents.com/fileManager/System-Folder/PreSalesImages/Bella/ProjectsList/Bella_condo_fp_01.jpg",
+    "title": "Bella",
+    "address": "5300 Yonge St, North York, ON M2N 5R2"
   }
 ]

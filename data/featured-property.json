@@ -62,5 +62,33 @@
     "address": "123 PORTLAND ST, TORONTO",
     "bathrooms": 2,
     "bedrooms": 3
+  },
+  {
+    "imageUrl": "https://filecenter2.bestforagents.com/Properties/TrebIDXImages/PhotoW8302704-1.jpeg",
+    "price": "$799,900",
+    "address": "1542 LANCASTER DR, OAKVILLE",
+    "bathrooms": 2,
+    "bedrooms": 3
+  },
+  {
+    "imageUrl": "https://filecenter2.bestforagents.com/Properties/TrebIDXImages/PhotoX8108466-1.jpeg",
+    "price": "$225,000",
+    "address": "238 NEIL MCGREGOR RD RD, ALNWICK/HALDIMAND",
+    "bathrooms": 0,
+    "bedrooms": 0
+  },
+  {
+    "imageUrl": "https://filecenter2.bestforagents.com/Properties/TrebIDXImages/PhotoW8317026-1.jpeg",
+    "price": "$1,159,000",
+    "address": "2295 COUNCIL RING RD, MISSISSAUGA",
+    "bathrooms": 3,
+    "bedrooms": 3
+  },
+  {
+    "imageUrl": "https://filecenter2.bestforagents.com/Properties/TrebIDXImages/PhotoX8145348-1.jpeg",
+    "price": "$757,000",
+    "address": "1 HEMLOCK CRES, KAWARTHA LAKES",
+    "bathrooms": 2,
+    "bedrooms": 2
   }
 ]

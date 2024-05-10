@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import ButtonAuth from "../button/button-auth";
 import { useTheme } from "@/contexts/theme-context";
 import Image from "next/image";
+import { fieldLabel } from "@/assets/field-label";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +26,7 @@ const Header: React.FC = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
+  const menuItems = fieldLabel["menu-item"];
   return (
     <nav className="flex flex-wrap items-center justify-between p-5 bg-white dark:bg-[#282c38]">
       <div className="flex justify-between w-full md:hidden">
@@ -103,30 +104,15 @@ const Header: React.FC = () => {
           isMenuOpen ? "block" : "hidden"
         } w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-teal-900 md:border-none`}
       >
-        <Link
-          href="/"
-          className="block md:inline-block text-teal-600 hover:text-blue-500 px-3 py-3 border-b-2 border-teal-900 md:border-none"
-        >
-          Home
-        </Link>
-        <Link
-          href="#"
-          className="block md:inline-block text-teal-600 hover:text-blue-500 px-3 py-3 border-b-2 border-teal-900 md:border-none"
-        >
-          Search
-        </Link>
-        <Link
-          href="#"
-          className="block md:inline-block text-teal-600 hover:text-blue-500 px-3 py-3 border-b-2 border-teal-900 md:border-none"
-        >
-          Selling
-        </Link>
-        <Link
-          href="/contact"
-          className="block md:inline-block text-teal-600 hover:text-blue-500 px-3 py-3 border-b-2 border-teal-900 md:border-none"
-        >
-          Contact
-        </Link>
+        {menuItems.map((item, index) => (
+          <Link
+            key={index}
+            href={item.href}
+            className="block md:inline-block text-teal-600 text-xl hover:text-blue-500 px-3 py-3 border-b-2 border-teal-900 md:border-none"
+          >
+            {item.title}
+          </Link>
+        ))}
         <div className="sm:flex sm:gap-4 block md:hidden w-full justify-between items-center my-4">
           <label
             htmlFor="AcceptConditions"

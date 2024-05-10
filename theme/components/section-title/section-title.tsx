@@ -1,5 +1,8 @@
-import { TitleProps } from "@/types/section-title-types";
 import React from "react";
+interface TitleProps {
+  title: string;
+  description: string;
+}
 
 const SectionTitle: React.FC<TitleProps> = ({ title, description }) => {
   return (

@@ -1,6 +1,7 @@
 "use client";
+
 import ButtonRegister from "@/components/button/button-register";
-import { Pagination } from "@/theme/components/Pagination/pagination";
+import { Pagination } from "@/theme/components/pagination/pagination";
 import SectionTitle from "@/theme/components/section-title/section-title";
 import { Property } from "@/types/constructed-property-card-types";
 import Image from "next/image";
@@ -44,10 +45,10 @@ const PreConstructedProject: React.FC<{ property: Property[] }> = ({
                   <h2 className="text-xl font-bold text-gray-900 dark:text-teal-600 pb-3">
                     {card.title}
                   </h2>
-                  <p className="dark:text-teal-600 my-2 text-sm">
+                  <p className="dark:text-teal-600 my-2 text-sm h-[53px]">
                     {card.address}
                   </p>
-                  <ButtonRegister />
+                  <ButtonRegister href={"/"} text={"Register"} />
                 </div>
               </div>
             </div>
