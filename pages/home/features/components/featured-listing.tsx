@@ -4,7 +4,7 @@ import SectionTitle from "@/theme/components/section-title/section-title";
 import React, { useState } from "react";
 import propertiesData from "../../../../data/featured-property.json";
 import { PropertyDetails } from "@/types/property-card-types";
-import Pagination from "@/theme/components/pagination/pagination";
+import Pagination from "@/theme/components/pagination/pagination-button";
 
 const FeaturedListing = () => {
   const cardsData = [1, 2, 3, 4];
