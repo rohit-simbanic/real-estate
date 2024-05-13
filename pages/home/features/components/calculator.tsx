@@ -47,7 +47,7 @@ const CalculatorCard: React.FC<CardProps> = ({ title, imageUrl }) => {
           width={140}
           height={140}
           src={imageUrl}
-          alt=""
+          alt="calculator"
         />
       </div>
       <div className="relative text-white px-6 pb-6 mt-6">

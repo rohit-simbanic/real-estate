@@ -5,6 +5,7 @@ import ButtonAuth from "../button/button-auth";
 import { useTheme } from "@/contexts/theme-context";
 import Image from "next/image";
 import { fieldLabel } from "@/assets/field-label";
+import ToggleButton from "@/theme/components/toggle-button/button-toggle";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -114,19 +115,7 @@ const Header: React.FC = () => {
           </Link>
         ))}
         <div className="sm:flex sm:gap-4 block md:hidden w-full justify-between items-center my-4">
-          <label
-            htmlFor="AcceptConditions"
-            className="relative h-8 w-14 cursor-pointer rounded-full dark:bg-gray-300 bg-black transition [-webkit-tap-highlight-color:_transparent] peer-checked:bg-green-500"
-          >
-            <input
-              type="checkbox"
-              id="AcceptConditions"
-              className="peer sr-only"
-              checked={isChecked}
-              onChange={handleChange}
-            />
-            <span className="absolute inset-y-0 left-0 m-1 size-6 rounded-full bg-white transition-all duration-300 ease-in-out peer-checked:left-6"></span>
-          </label>
+          <ToggleButton isChecked={isChecked} handleChange={handleChange} />
           <div className="flex gap-2">
             <ButtonAuth
               text="Login"

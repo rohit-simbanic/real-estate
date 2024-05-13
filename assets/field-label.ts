@@ -24,4 +24,5 @@ export const fieldLabel = {
     { title: "Selling", href: "/" },
     { title: "Contact", href: "/contact" },
   ],
+  "cpa-footer-title": "Make Your Next Career Move!",
 };

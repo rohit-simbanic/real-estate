@@ -4,7 +4,18 @@ import PropertyCard from "@/components/cards/property-card";
 
 jest.mock("next/image", () => ({
   __esModule: true,
-  default: ({ src, alt, width, height }) => (
+  default: ({
+    src,
+    alt,
+    width,
+    height,
+  }: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+  }) => (
+    // eslint-disable-next-line @next/next/no-img-element
     <img src={src} alt={alt} width={width} height={height} />
   ),
 }));
@@ -30,7 +41,7 @@ describe("PropertyCard", () => {
     expect(screen.getByText(/2 rooms/i)).toBeInTheDocument();
     expect(screen.getByText(/3 rooms/i)).toBeInTheDocument();
 
-    expect(screen.getByText("For Sale")).toBeInTheDocument(); // Index 0 should show "For Sale"
+    expect(screen.getByText("For Sale")).toBeInTheDocument();
   });
 
   it("renders the lease tag for odd indices", () => {

@@ -33,6 +33,7 @@ const ContactForm = () => {
     <form
       onSubmit={handleSubmit}
       className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5"
+      data-testid="contact-form"
     >
       <input
         className="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
@@ -60,7 +61,7 @@ const ContactForm = () => {
       />
       <input
         className="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-        type="number"
+        type="tel"
         placeholder="Phone*"
         name="phone"
         value={formData.phone}

@@ -27,7 +27,7 @@ const Banner = () => {
               borderWidth={2}
               borderRadius="md"
               bgColor="blue-600"
-              hoverBgColor="transparent"
+              hoverBgColor="blue-600"
               shadow={false}
             />
           </div>

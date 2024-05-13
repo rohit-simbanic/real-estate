@@ -1,4 +1,4 @@
-const Pagination = ({
+export const Pagination = ({
   currentPage,
   totalPages,
   paginate,
@@ -30,5 +30,3 @@ const Pagination = ({
     </div>
   );
 };
-
-export default Pagination;
